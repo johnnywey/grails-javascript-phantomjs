@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Jasmine Test Runner</title>
+  <link rel="stylesheet" type="text/css" href="../../test/resources/jasmine-1.0.2/jasmine.css">
+  <script type="text/javascript" src="../../test/resources/jasmine-1.0.2/jasmine.js"></script>
+  <script type="text/javascript" src="../../test/resources/jasmine-1.0.2/jasmine-html.js"></script>
+  <script type="text/javascript" src="../../test/resources/jasmine-reporters/jasmine.junit_reporter.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/javascript" src="../../web-app/js/base64.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="base64Spec.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+  jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter());
+  jasmine.getEnv().execute();
+</script>
+
+</body>
+</html>
