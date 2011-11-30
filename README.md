@@ -15,5 +15,6 @@ There are a few goofy limitations right now, and they are things I'd like to imp
 
 * The test report is only generated in XML which makes it nice for tooling (like Jenkins) but not very useful for nicely viewing in a browser like the other Grails test reports.
 * I'm not currently hooking into the global test status on a failure so the output of a JavaScript failing test will show both a FAILURE (for the Jasmine tests that fail) and a SUCCESS (for the overall Grails testing phase). However, when setup in Jenkins, the build _will_ successfully fail since Jenkins uses the JUnit XML to determine the status of the build rather than relying on Grails console output.
+* **This will fail to function properly** if used with a path containing spaces. I'm not sure why yet, but this just bit me during a presentation :/
 
 **Enjoy!**
