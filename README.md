@@ -2,7 +2,7 @@
 
 This is an empty Grails project with an example of how to hook into Grails events to support JavaScript testing using PhantomJS and Jasmine.
 
-I used Grails version **1.3.7**, PhantomJS version **1.2.0** and Jasmine **1.0.2**.
+I used Grails version **2.0RC2**, PhantomJS version **1.2.0** and Jasmine **1.0.2**.
 
 A few of these are slightly behind the latest versions, so a good starting point would be to update to the latest and greatest and verify the setup still works (I don't believe this would be an issue).
 
